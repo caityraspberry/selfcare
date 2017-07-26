@@ -1,44 +1,52 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Self Care</title>
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oregano|Rancho|Slabo+13px|Slackey|Vibur" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    /*  font-family: 'Slabo 13px', serif;
+ <title>Self Care</title>
+ <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oregano|Rancho|Slabo+13px|Slackey|Vibur" rel="stylesheet">
+<style>
+/*  font-family: 'Slabo 13px', serif;
     font-family: 'Rancho', cursive;
     font-family: 'Vibur', cursive;
     font-family: 'Slackey', cursive;
     font-family: 'Cutive Mono', monospace;
     font-family: 'Oregano', cursive;
      */
-        
+
          .foo {
     height: 100vh;
     width: 100vw;
     background: url(cover.jpg) center center / cover no-repeat;
  }
 
+/**
+ * iPad with portrait orientation.
+ */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
   .foo {
     height: 1024px;
   }
 }
-
+/**
+ * iPad with landscape orientation.
+ */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
   .foo {
     height: 768px;
   }
 }
-
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
 @media screen and (device-aspect-ratio: 40/71) {
   .foo {
     height: 500px;
   }
 }
-        
+
     html {
     background: url("pretty6.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -51,10 +59,41 @@
 /*         font-size: 12.5vw; */
         font-size: 30vh;
         text-align: center;
+        margin-bottom: 20px;
         }
+     .btn-btn-info{
+       background-color: #FFFCD1;
+       font-family: 'Rancho', cursive;
+       font-size: 40px;
+       border-radius: 5px;
+       padding: 10px;
+     }
+    a:link {
+    color: white;
+    text-decoration: none;
+      }
+a:visited {
+    color: white;
+    text-decoration: none;
+     }
+a:hover {
+    color: white;
+    text-decoration: none;
+    }
+a:active {
+    color: white;
+    text-decoration: none;
+    }
     </style>
 </head>
 <body>
+  <div id="Title">
     <h1 id="MainTitle"> <font color="#FFFCD1"> Stress Less</font> </h1>
+  </div>
+  <div>
+    <center>
+    <a href="https://caityraspberry.github.io/selfcare/breathe.html" class="btn-btn-info" role="button">Get Started</a>
+  </center>
+  </div>
 </body>
 </html>
