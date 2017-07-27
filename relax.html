@@ -1,8 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Relax</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tense and Relax</title>
+     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oregano|Rancho|Slabo+13px|Slackey|Vibur" rel="stylesheet">
 <style>
-</style
+  .total {
+    background: radial-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.9));
+    height: 100vh;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    float: center;
+    text-align: center;
+  }
+  .instructions {
+    height: 30%;
+    width: 100%;
+    position:fixed;
+    top: 0px;
+    /*text-align: top;*/
+    text-align: center;
+    float: left;
+    padding-bottom:10vh;
+  }
+  #instructions_text {
+    top: 0;
+    font-family: 'Rancho', cursive;
+    font-size: 7vh;
+    font-size: 7vw;
+    vertical-align: top;
+  }
+  .images {
+    /*width:100%;
+    float:left;
+    height:60vh;
+    top: 5;
+    left:0;
+    right:0;*/
+    position:fixed;
+    top: 35vh;
+    bottom: 10vh;
+    text-align: center;
+    height: 70vh;
+    width: 100vw;
+    float: left;
+  }
+  .imagediv{
+    float:left;
+    width: 25vw;
+    height:100%;
+    text-align: center;
+  }
+  #empty_img{
+    /*height:50px;*/
+    width:50px;
+    height:50px;
+    /*padding:10vh;*/
+    position: fixed;
+    left:0;
+  }
+  /*.gif {
+    padding: 5%;
+    height: 100%;
+    width: 30vw;
+    align: center;
+    float:left;*/
+  /*}*/
+  #gif_gif{
+    /*height:600px;*/
+    width:30vw;
+    height:50vh;
+    padding: 0px;
+    position:fixed;
+    bottom: 10vh;
+    left:30vw;
+  }
+  /*.arrow{
+    height: 30%;
+    width: 30vw;
+    align: center;
+    float:left;*/
+  /*}*/
+#arrow_img{
+  float:right;
+  width:15vh;
+  height: 5vw;
+  position:fixed;
+  right:10vw;
+}
+</style>
+</head>
+<body>
+<div class="total">
+  <div class="instructions">
+    <p id="instructions_text"> Instructions will go here  </p>
+  </div>
+  <div class="images">
+    <div class="imagediv">
+      <!-- <a  role="button"> <img id="empty_img" src="hat.jpg"> </a> -->
+    </div>
+    <div class="imagediv">
+        <img id="gif_gif" src="finalpose.gif">
+    </div>
+    <div class="imagediv">
+      <a  href="https://caityraspberry.github.io/selfcare/mindfullness.html" role="button"> <img id="arrow_img" src="hat.jpg"> </a>
+    </div>
+  </div>
+</div>
+<!-- <div id="arrow">
+  <a href="https://caityraspberry.github.io/selfcare/powerpose.html" role="button"> <img src="hat.jpg"> </a>
+</div> -->
+
 </body>
 </html>
