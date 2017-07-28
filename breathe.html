@@ -22,25 +22,17 @@
     width: 100%;
     position:fixed;
     top: 0px;
-    /*text-align: top;*/
     text-align: center;
     float: left;
     padding-bottom:10vh;
   }
   #instructions_text {
-    top: 0;
-    font-family: 'Rancho', cursive;
-    font-size: 7vh;
-    font-size: 7vw;
+    width: 15vw;
+    height: auto;
     vertical-align: top;
+    padding-top: 5vw;
   }
   .images {
-    /*width:100%;
-    float:left;
-    height:60vh;
-    top: 5;
-    left:0;
-    right:0;*/
     position:fixed;
     top: 35vh;
     bottom: 10vh;
@@ -49,42 +41,26 @@
     width: 100vw;
     float: left;
   }
-  .imagediv{
+  /*.imagediv{
     float:left;
     width: 25vw;
     height:100%;
     text-align: center;
-  }
+  }*/
   #empty_img{
-    /*height:50px;*/
     width:50px;
     height:50px;
-    /*padding:10vh;*/
     position: fixed;
     left:0;
   }
-  /*.gif {
-    padding: 5%;
-    height: 100%;
-    width: 30vw;
-    align: center;
-    float:left;*/
-  /*}*/
   #gif_gif{
-    /*height:600px;*/
     width: 70vw;
-    height: 60vh;
+    height: auto;
     padding: 0px;
     position: fixed;
     bottom: 15vh;
     left: 15vw;
   }
-  /*.arrow{
-    height: 30%;
-    width: 30vw;
-    align: center;
-    float:left;*/
-  /*}*/
 #arrow_img{
   float:right;
   width:15vh;
@@ -126,24 +102,38 @@ a:active {
 .btn-btn-info:hover{
   background-color:rgba(123, 175, 242,0.75);
 }
+@media only screen and (max-width: 480px) {
+  #gif_gif{
+    padding-bottom: 20vh;
+    width: 75vw;
+    height: auto;
+  }
+  #arrow_img{
+    top: 35vh;
+    right: 0vh;
+  }
+  #instructions_text {
+    width: 30vw;
+    height: auto;
+    vertical-align: top;
+    padding-top: 5vw;
+  }
+}
 </style>
 </head>
 <body>
 <div class="total">
   <div class="instructions">
-    <img id="instructions_text" src="breathing.gif"> 
+    <img id="instructions_text" src="breathing.gif">
   </div>
-  <div class="images">
-    <div class="imagediv">
-      <!-- <a  role="button"> <img id="empty_img" src="hat.jpg"> </a> -->
-    </div>
-    <div class="imagediv">
+  <div >
+    <div >
         <img id="gif_gif" controls loop src="breathefull.gif">
     </div>
-    <div class="imagediv">
+    <div>
       <a  href="https://caityraspberry.github.io/selfcare/stretch.html" role="button"> <img id="arrow_img" src="hat.jpg"> </a>
     </div>
-    <div class="imagediv">
+    <div>
       <a href="https://caityraspberry.github.io/selfcare/home.html" class="btn-btn-info" img id="quit" role="button">Exit</a>
     </div>
   </div>
