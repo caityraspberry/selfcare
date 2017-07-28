@@ -15,8 +15,8 @@
     bottom:0;
     left:0;
     right: 0;
-    float: center;
-    text-align: center;
+    float: left;
+    text-align: left;
   }
   .instructions {
     height: 30%;
@@ -28,12 +28,13 @@
     float: left;
     padding-bottom:10vh;
   }
-  #instructions_text {
+  p {
     top: 0;
     font-family: 'Rancho', cursive;
-    font-size: 5vh;
-    font-size: 5vw;
+    font-size: 4.5vh;
+    font-size: 4.5vw;
     vertical-align: top;
+    line-height: 2.5vh;
   }
   .images {
     /*width:100%;
@@ -127,20 +128,24 @@ a:active {
 .btn-btn-info:hover{
   background-color:rgba(123, 137, 242, 0.8);
 }
-
-
+p.thick {
+    font-weight: bold;
+}
 </style>
 </head>
 <body>
 <div class="total">
   <div class="instructions">
-    <li id="instructions_text">
-        <ul>Remember to drink water</ul>
-        <ul>Stay calm</ul>
-        <ul>Take deep breathes</ul>
-        <ul>Don't forget to eat</ul>
-        <ul>Use this app as a resource if you are ever feeling stressed or upset</ul>
-      </li>
+
+        <p class="thick">Be sure to:</p>
+
+        <p> </p>
+        <p>Remember to drink water</p>
+        <p>Try to stay calm</p>
+        <p>Take deep breathes</p>
+        <p>Don't forget to eat</p>
+        <p>Use this app as a resource for stress</p>
+
 
             <a  href="https://caityraspberry.github.io/selfcare/affirmations.html" role="button"> <img id="arrow_img" src="hat.jpg"> </a>
    </div>
