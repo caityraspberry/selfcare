@@ -1,172 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <link rel= "shortcut icon" type= "image/x-icon" href= "lotusicon.png">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Breathe</title>
-     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oregano|Rancho|Slabo+13px|Slackey|Vibur" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link rel= "shortcut icon" type= "image/x-icon" href= "lotusicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="lotusicon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="lotusicon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="lotusicon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="lotusicon.png" />
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <title>Self Care</title>
+ <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oregano|Rancho|Slabo+13px|Slackey|Vibur" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Antic|Boogaloo" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+
 <style>
-  .total {
-    background-color: #9DC5BB;
-/*     background: radial-gradient(rgba(123, 175, 242,0.05), rgba(123, 175, 242,0.85)); */
+/*  font-family: 'Slabo 13px', serif;
+    font-family: 'Rancho', cursive;
+    font-family: 'Vibur', cursive;
+    font-family: 'Slackey', cursive;
+    font-family: 'Cutive Mono', monospace;
+    font-family: 'Oregano', cursive;
+     */
+         .foo {
     height: 100vh;
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right: 0;
-    float: center;
-    text-align: center;
-  }
-  .instructions {
-    height: 30%;
-    width: 100%;
-    position:fixed;
-    top: 0px;
-    text-align: center;
-    float: left;
-    padding-bottom:10vh;
-  }
-  #instructions_text {
-    width: 15vw;
-    height: auto;
-    vertical-align: top;
-    padding-top: 5vw;
-  }
-  .images {
-    position:fixed;
-    top: 35vh;
-    bottom: 10vh;
-    text-align: center;
-    height: 70vh;
     width: 100vw;
-    float: left;
+    background: url(cover.jpg) center center / cover no-repeat;
+ }
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+  .foo {
+    height: 1024px;
   }
-  /*.imagediv{
-    float:left;
-    width: 25vw;
-    height:100%;
-    text-align: center;
-  }*/
-  #empty_img{
-    width:50px;
-    height:50px;
-    position: fixed;
-    left:0;
-  }
-  #gif_gif{
-    width: 70vw;
-    height: auto;
-    padding: 0px;
-    position: fixed;
-    bottom: 15vh;
-    left: 15vw;
-  }
-#arrow_img{
-  float:right;
-  width:5vh;
-  height: auto;
-  position:fixed;
-  right:10vw;
-  top: 50vh;
 }
-a:link {
-   color: black;
-   text-decoration: none;
-     }
-a:visited {
-   color: black;
-   text-decoration: none;
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+  .foo {
+    height: 768px;
+  }
+}
+@media screen and (device-aspect-ratio: 40/71) {
+  .foo {
+    height: 500px;
+  }
+}
+    html {
+    background: url("pretty6.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     }
-a:hover {
-   color: black;
-   text-decoration: none;
-   }
-a:active {
-   color: black;
-   text-decoration: none;
-   }
-#quit{
-  float:left;
-  position:fixed;
-  left:.5vw;
-  top: 1.5vh;
-}
-.btn-btn-info{
-       background-color: white;
+      #MainTitle {
+        font-family: 'Rancho', cursive;
+        font-size: 30vh;
+        font-size: 20vw;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 0px;
+        line-height: 70%;
+        }
+     .btn-btn-info{
+       background-color: #2D3C63;
+       border: solid;
+       border-color: #2D3C63;
        font-family: 'Libre Franklin', sans-serif;
-       font-size: 3.8vh;
-       font-size: 1.9vw;
+       font-size: 8vh;
+       font-size: 4vw;
        border-radius: 15px;
        padding: 10px;
      }
-.btn-btn-info:hover{
-  background-color:rgba(123, 175, 242,0.75);
-}
-@media only screen and (max-width: 480px) {
-  #gif_gif{
-    padding-bottom: 20vh;
-    width: 75vw;
-    height: auto;
-  }
-  #arrow_img{
-    top: 25vh;
-    right:10vw;
-    width: 10vh;
-    height: auto;
-  }
-  #instructions_text {
-    width: 30vw;
-    height: auto;
-    vertical-align: top;
-    padding-top: 5vw;
-  }
-}
-@media only screen and (max-height: 320px) {
-  #gif_gif{
-    padding-bottom: 0;
-    width: 75vw;
-    height: auto;
-  }
-  #arrow_img{
-    top: 25vh;
-    right:10vw;
-    width: 10vh;
-    height: auto;
-  }
-  #instructions_text {
-    width: 30vw;
-    height: auto;
-    vertical-align: top;
-    padding-top: 5vw;
-  }
-}
-/*     @media only screen and (min-height: 320px) {
-  #gif_gif{
-    padding-bottom: 0;
-    width: 75vw;
-    height: auto;
+      .btn-btn-info:hover{
+      background-color: #526593;
+      border: solid;
+      border-color:#526593;
+    }
+    a:link {
+    color: #BCBDC0;
+    text-decoration: none;
       }
-  } */
-</style>
+a:visited {
+    color: #BCBDC0;
+    text-decoration: none;
+     }
+a:hover {
+    color: #BCBDC0;
+    text-decoration: none;
+    }
+a:active {
+    color: #BCBDC0;
+    text-decoration: none;
+    }
+    #BUTTON {
+     padding: 10vh;
+     margin-top: 0px;
+     padding-bottom: 15vh;
+    }
+    #Title {
+      padding-bottom: 19vh;
+      padding-top: 19vh;
+      margin-top: 0px;
+      width: 100%
+    }
+    #WORDS {
+      font-size: 1.5vw;
+      font-family: 'Libre Franklin', sans-serif;
+    }
+    #HEADER {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      text-align: center;
+      font-size: 3vw;
+      font-family: 'Libre Franklin', sans-serif;
+    }
+    #start {
+      width: 100%;
+      margin: 5px;
+      background-color: #2D3C63;
+      border: solid;
+      border-color: #2D3C63;
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 4vh;
+      font-size: 2vw;
+      border-radius: 15px;
+      padding: 10px;
+    }
+    .w3-modal-content {
+      border-radius: 20px;
+    }
+    .w3-modal-content {
+      background-color: #bc85a1;
+    }
+    </style>
 </head>
 <body>
-<div class="total">
-  <div class="instructions">
-    <img id="instructions_text" src="breatheinstructions.gif">
+  <div id="Title">
+    <h1 id="MainTitle"> <font color="#FFFCD1"> Stress Less</font> </h1>
   </div>
-  <div >
-    <div >
-        <img id="gif_gif" controls loop src="breathefull.gif">
-    </div>
-    <div>
-      <a  href="https://caityraspberry.github.io/selfcare/stretch.html" role="button"> <img id="arrow_img" src="arrow.png"> </a>
-    </div>
-    <div>
-      <a href="https://caityraspberry.github.io/selfcare/home.html" class="btn-btn-info" img id="quit" role="button">Exit</a>
+    <!-- Trigger the modal with a button -->
+    <div class="w3-container">
+      <center>
+  <button onclick="document.getElementById('id01').style.display='block'" class="btn-btn-info" role="button" class="w3-button_w3-black"> <font color="#FFFCD1">Get Started</font></button>
+</center>
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <p id="HEADER"> <font color="#FFFCD1">Enter a blissful world</font></p>
+        <p id="WORDS"> <font color="#FFFCD1">Welcome to Stress Less! Our team made this product as a resouce for teens and adults to destress when you feel anxious. Before tests, races, competitions or just daily tasks feel free to pull out this application to calm you down. We will lead you through a variety of exercises to help you calm down. Don't distress, destress :)))) </font></p>
+        <button id="start"> <a href="https://caityraspberry.github.io/selfcare/breathe.html"> <font color="#FFFCD1">Take me to the tutorial</font></a> </button>
+      </div>
     </div>
   </div>
 </div>
+  <!-- <div id="BUTTON">
+    <center>
+    <a href="https://caityraspberry.github.io/selfcare/breathe.html" class="btn-btn-info" role="button">Get Started</a>
+  </center>
+  </div> -->
 </body>
 </html>
