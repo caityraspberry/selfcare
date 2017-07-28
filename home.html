@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <link rel= "shortcut icon" type= "image/x-icon" href= "lotusicon.png">
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="lotusicon.png" />
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="lotusicon.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="lotusicon.png" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="lotusicon.png" />
 
-  
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -62,6 +65,8 @@
         }
      .btn-btn-info{
        background-color: #2D3C63;
+       border: solid;
+       border-color: #2D3C63;
        font-family: 'Libre Franklin', sans-serif;
        font-size: 8vh;
        font-size: 4vw;
@@ -70,6 +75,8 @@
      }
       .btn-btn-info:hover{
       background-color: #526593;
+      border: solid;
+      border-color:#526593;
     }
     a:link {
     color: #BCBDC0;
@@ -98,16 +105,60 @@ a:active {
       margin-top: 0px;
       width: 100%
     }
+    #WORDS {
+      font-size: 1.5vw;
+      font-family: 'Libre Franklin', sans-serif;
+    }
+    #HEADER {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      text-align: center;
+      font-size: 3vw;
+      font-family: 'Libre Franklin', sans-serif;
+    }
+    #start {
+      width: 100%;
+      margin: 5px;
+      background-color: #2D3C63;
+      border: solid;
+      border-color: #2D3C63;
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 4vh;
+      font-size: 2vw;
+      border-radius: 15px;
+      padding: 10px;
+    }
+    .w3-modal-content {
+      border-radius: 20px;
+    }
+    .w3-modal-content {
+      background-color: #bc85a1;
+    }
     </style>
 </head>
 <body>
   <div id="Title">
     <h1 id="MainTitle"> <font color="#FFFCD1"> Stress Less</font> </h1>
   </div>
-  <div id="BUTTON">
+    <!-- Trigger the modal with a button -->
+    <div class="w3-container">
+      <center>
+  <button onclick="document.getElementById('id01').style.display='block'" class="btn-btn-info" role="button" class="w3-button_w3-black"> <font color="#FFFCD1">Get Started</font></button>
+</center>
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <p id="HEADER"> <font color="#FFFCD1">Enter a blissful world</font></p>
+        <p id="WORDS"> <font color="#FFFCD1">Welcome to Stress Less! Our team made this product as a resouce for teens and adults to destress when you feel anxious. Before tests, races, competitions or just daily tasks feel free to pull out this application to calm you down. We will lead you through a variety of exercises to help you calm down. Don't distress, destress :)))) </font></p>
+        <button id="start"> <a href="https://caityraspberry.github.io/selfcare/breathe.html"> <font color="#FFFCD1">Take me to the tutorial</font></a> </button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <div id="BUTTON">
     <center>
     <a href="https://caityraspberry.github.io/selfcare/breathe.html" class="btn-btn-info" role="button">Get Started</a>
   </center>
-  </div>
+  </div> -->
 </body>
 </html>
