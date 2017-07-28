@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel= "shortcut icon" type= "image/x-icon" href= "lotusicon.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Breathe</title>
@@ -23,25 +22,17 @@
     width: 100%;
     position:fixed;
     top: 0px;
-    /*text-align: top;*/
     text-align: center;
     float: left;
     padding-bottom:10vh;
   }
   #instructions_text {
-    top: 0;
-    font-family: 'Rancho', cursive;
-    font-size: 7vh;
-    font-size: 7vw;
+    width: 15vw;
+    height: auto;
     vertical-align: top;
+    padding-top: 5vw;
   }
   .images {
-    /*width:100%;
-    float:left;
-    height:60vh;
-    top: 5;
-    left:0;
-    right:0;*/
     position:fixed;
     top: 35vh;
     bottom: 10vh;
@@ -50,51 +41,35 @@
     width: 100vw;
     float: left;
   }
-  .imagediv{
+  /*.imagediv{
     float:left;
     width: 25vw;
     height:100%;
     text-align: center;
-  }
+  }*/
   #empty_img{
-    /*height:50px;*/
     width:50px;
     height:50px;
-    /*padding:10vh;*/
     position: fixed;
     left:0;
   }
-  /*.gif {
-    padding: 5%;
-    height: 100%;
-    width: 30vw;
-    align: center;
-    float:left;*/
-  /*}*/
   #gif_gif{
-    /*height:600px;*/
-    width:40vw;
-    height:50vh;
+    width: 70vw;
+    height: auto;
     padding: 0px;
-    position:fixed;
+    position: fixed;
     bottom: 15vh;
-    left:30vw;
+    left: 15vw;
   }
-  /*.arrow{
-    height: 30%;
-    width: 30vw;
-    align: center;
-    float:left;*/
-  /*}*/
 #arrow_img{
   float:right;
   width:15vh;
-  height: 5vw;
+  height: auto;
   position:fixed;
   right:10vw;
   top: 50vh;
 }
-    a:link {
+a:link {
    color: black;
    text-decoration: none;
      }
@@ -125,34 +100,73 @@ a:active {
        padding: 10px;
      }
 .btn-btn-info:hover{
-  background-color:rgba(231, 129, 63, 0.8);
+  background-color:rgba(123, 175, 242,0.75);
 }
+@media only screen and (max-width: 480px) {
+  #gif_gif{
+    padding-bottom: 20vh;
+    width: 75vw;
+    height: auto;
+  }
+  #arrow_img{
+    top: 25vh;
+    right:10vw;
+    width: 10vh;
+    height: auto;
+  }
+  #instructions_text {
+    width: 30vw;
+    height: auto;
+    vertical-align: top;
+    padding-top: 5vw;
+  }
+}
+@media only screen and (max-height: 320px) {
+  #gif_gif{
+    padding-bottom: 0;
+    width: 75vw;
+    height: auto;
+  }
+  #arrow_img{
+    top: 25vh;
+    right:10vw;
+    width: 10vh;
+    height: auto;
+  }
+  #instructions_text {
+    width: 30vw;
+    height: auto;
+    vertical-align: top;
+    padding-top: 5vw;
+  }
+}
+    @media only screen and (min-height: 320px) {
+  #gif_gif{
+    padding-bottom: 0;
+    width: 75vw;
+    height: auto;
+      }
+  }
 </style>
 </head>
 <body>
 <div class="total">
   <div class="instructions">
-    <img id="instructions_text" src="breathing.gif"> 
+    <img id="instructions_text" src="breatheinstructions.gif">
   </div>
-  <div class="images">
-    <div class="imagediv">
-      <!-- <a  role="button"> <img id="empty_img" src="hat.jpg"> </a> -->
+  <div >
+    <div >
+        <img id="gif_gif" controls loop src="breathefull.gif">
     </div>
-    <div class="imagediv">
-        <img id="gif_gif" src="breathefull2.gif">
+    <div>
+      <a  href="https://caityraspberry.github.io/selfcare/stretch.html" role="button"> <img id="arrow_img" src="arrow.png"> </a>
     </div>
-    <div class="imagediv">
-      <a  href="https://caityraspberry.github.io/selfcare/affirmations.html" role="button"> <img id="arrow_img" src="hat.jpg"> </a>
-    </div>
-      <div class="imagediv">
+    <div>
       <a href="https://caityraspberry.github.io/selfcare/home.html" class="btn-btn-info" img id="quit" role="button">Exit</a>
     </div>
-      
   </div>
 </div>
-<!-- <div id="arrow">
-  <a href="https://caityraspberry.github.io/selfcare/powerpose.html" role="button"> <img src="hat.jpg"> </a>
-</div> -->
-
 </body>
 </html>
+
+
