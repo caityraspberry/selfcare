@@ -20,20 +20,31 @@
     float: center;
     text-align: center;
   }
+    height: 100vh;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    float: center;
+    text-align: center;
+  }
   .instructions {
     height: 30%;
     width: 100%;
     position:fixed;
     top: 0px;
+    /*text-align: top;*/
     text-align: center;
     float: left;
     padding-bottom:10vh;
   }
   #instructions_text {
-    width: 15vw;
-    height: auto;
+    top: 0;
+    font-family: 'Rancho', cursive;
+    font-size: 7vh;
+    font-size: 7vw;
     vertical-align: top;
-    padding-top: 5vw;
   }
   .images {
     position:fixed;
@@ -155,7 +166,7 @@ a:active {
 <body>
 <div class="total">
   <div class="instructions">
-    <img id="instructions_text" src="breatheinstructions.gif">
+        <p> Inhale as the shapes get bigger. Exhale as they get smaller. </p>
   </div>
   <div >
     <div >
