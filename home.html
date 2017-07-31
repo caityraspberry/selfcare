@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -101,7 +102,7 @@ a:active {
     }
     #Title {
       padding-bottom: 19vh;
-      padding-top: 19vh;
+      padding-top: 9vh;
       margin-top: 0px;
       width: 100%
     }
@@ -139,9 +140,42 @@ a:active {
     .w3-modal-content {
       background-color: #bc85a1;
     }
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    padding-left: 2vw;
+    padding-top: 2vh;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    text-align: left;
+}
+#res:hover, #about:hover, #contact:hover, #tut:hover{
+  color: yellow;
+}
+
     </style>
 </head>
 <body>
+  <div class="dropdown">
+    <img src="3lines.png" width="50" height="50">
+    <div class="dropdown-content">
+      <ul><a id="res" href="#">About Us</a> </ul>
+      <ul><a id="about" href="#">Resources</a> </ul>
+      <ul> <a id="contact" href="#">Contact Us</a> </ul>
+      <ul> <a id="tut" href="#">Tutorial</a> </ul>
+    </div>
+</div>
   <div id="Title">
     <h1 id="MainTitle"> <font color="#FFFCD1"> Stress Less</font> </h1>
   </div>
