@@ -19,44 +19,8 @@
     float: center;
     text-align: center;
   }
-  .instructions {
-    height: 30%;
-    width: 100%;
-    position:fixed;
-    top: 0px;
-    /*text-align: top;*/
-    text-align: center;
-    float: left;
-    padding-bottom:10vh;
-  }
-  #instructions_text {
-    top: 0;
-    font-family: 'Rancho', cursive;
-    font-size: 7vh;
-    font-size: 7vw;
-    vertical-align: top;
-  }
-  .images {
-    /*width:100%;
-    float:left;
-    height:60vh;
-    top: 5;
-    left:0;
-    right:0;*/
-    position:fixed;
-    top: 35vh;
-    bottom: 10vh;
-    text-align: center;
-    height: 70vh;
-    width: 100vw;
-    float: left;
-  }
-  .imagediv{
-    float:left;
-    width: 20vw;
-    height:100%;
-    text-align: center;
-  }
+
+
   #empty_img{
     /*height:50px;*/
     width:50px;
@@ -65,40 +29,12 @@
     position: fixed;
     left:0;
   }
-  /*.gif {
-    padding: 5%;
-    height: 100%;
-    width: 30vw;
-    align: center;
-    float:left;*/
-  /*}*/
-  #gif_gif{
-    /*height:600px;*/
-    width:20vw;
-    height:50vh;
-    padding: 0px;
-    position:fixed;
-    bottom: 10vh;
-    left:30vw;
-  }
-  /*.arrow{
-    height: 30%;
-    width: 30vw;
-    align: center;
-    float:left;*/
-  /*}*/
-#arrow_img{
-  float:right;
-  width:5vh;
-  height: auto;
-  position:fixed;
-  right:10vw;
-  top: 50vh;
-}
-    a:link {
+
+
+a:link {
    color: black;
    text-decoration: none;
-     }
+   }
 a:visited {
    color: black;
    text-decoration: none;
@@ -128,15 +64,132 @@ a:active {
 .btn-btn-info:hover{
   background-color:rgba(123, 137, 242, 0.8);
 }
-#pose1 {
-  float:right;
-  right: 0px;
-  left: 5
+
+
+@media only screen and (orientation: portrait) {
+  #gif_gif{
+    height: 50vh;
+    width: auto;
+    padding: 0px;
+    position: fixed;
+    bottom: 7vh;
+    left: 11vw;
+  }
+  #arrow_img{
+    float: right;
+    position: fixed;
+    right: 7vw;
+    top: 40vh;
+    right: 5vw;
+    width: 10vw;
+    height: auto;
+  }
+  .instructions {
+    height: 40vh;
+    width: 90vw;
+    position:fixed;
+    top: 0;
+    text-align: center;
+    float: left;
+    padding-bottom:10vh;
+    left:5vw;
+    right:5vw;
+  }
+  #instructions_text {
+    top: 0;
+    font-family: 'Rancho', cursive;
+    font-size: 10vh;
+    font-size: 10vw;
+    vertical-align: top;
+  }
+  .images {
+    position:fixed;
+    top: 25vh;
+    bottom: 5vh;
+    text-align: center;
+    height: 70vh;
+    width: 50vw;
+    float: left;
+    left: 30vw;
+  }
+  #pose1 {
+    float:left;
+    /*right: 0px;*/
+    /*left: 5;*/
+    width: 80%;
+    height: auto;
+  }
+  #pose2 {
+    float: left;
+    /*left: 0px;*/
+    width: 80%;
+    height: auto;
+  }
+
 }
-#pose2 {
-  float: left;
-  left: 0px;
+@media only screen and (orientation: landscape) {
+  #gif_gif{
+    height: 65vh;
+    witdh: auto;
+    padding: 0px;
+    position: fixed;
+    bottom: 6vh;
+    left: 35vw;
+  }
+  #arrow_img{
+    float: right;
+    position: fixed;
+    right: 7vw;
+    top: 50vh;
+    right: 5vw;
+    width: 5vw;
+    height: auto;
+  }
+  .instructions {
+    height: 25vh;
+    width: 80vw;
+    position:fixed;
+    top: 0;
+    text-align: center;
+    float: left;
+    padding-bottom:10vh;
+    left:10vw;
+    right:10vw;
+  }
+  #instructions_text {
+    top: 0;
+    font-family: 'Rancho', cursive;
+    font-size: 7vh;
+    font-size: 7vw;
+    vertical-align: top;
+  }
+  .images {
+    position:fixed;
+    top: 35vh;
+    bottom: 10vh;
+    text-align: center;
+    height: 70vh;
+    width: 100vw;
+    float: left;
+  }
+  #pose1 {
+    position: fixed;
+    float:right;
+    right: 20vw;
+    width: 25vw;
+    height: auto;
+  }
+  #pose2 {
+    position: fixed;
+    float: left;
+    width: 25vw;
+    left: 20vw;
+    height: auto;
+  }
+
+
 }
+
 </style>
 </head>
 <body>
@@ -145,21 +198,8 @@ a:active {
     <p id="instructions_text"> Strike a Power Pose!  </p>
   </div>
   <div class="images">
-    <div class="imagediv">
-      <!-- <a  role="button"> <img id="empty_img" src="hat.jpg"> </a> -->
-    </div>
-<!--     <div class="imagediv">
-        <img id="gif_gif" src="finalpose.gif">
-    </div> -->
-      <div class="imagediv">
-            <img class="poses" id="pose1" src="pp1.png" width="100%">
-        </div>
-        <div class="imagediv">
-          <!-- <a  role="button"> <img id="empty_img" src="hat.jpg"> </a> -->
-        </div>
-        <div class="imagediv">
-            <img id="pose2" src="pp2.png" class="poses" width="100%">
-       </div>
+          <img class="poses" id="pose1" src="pp1.png" width="100%">
+          <img id="pose2" src="pp2.png" class="poses" width="100%">
     <div class="imagediv">
       <a  href="https://caityraspberry.github.io/selfcare/breathe2.html" role="button"> <img id="arrow_img" src="arrow.png"> </a>
    </div>
