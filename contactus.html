@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,7 +13,6 @@
       .title {
    font-family: 'Raleway', sans-serif;
    font-size: 30px;
-   height: 25%;
     }
       a:link {
     color: #BCBDC0;
@@ -38,7 +36,6 @@ a:active {
     padding-left: 2vw;
     padding-top: 2vh;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -47,7 +44,6 @@ a:active {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
     text-align: left;
@@ -74,9 +70,9 @@ a:active {
 </div>
     <center>
      <div class="title">
- 
+
       <h1>Contact us</h1>
-        
+
     </div>
     </center>
 <!-- START HERE -->
@@ -91,30 +87,32 @@ a:active {
 
     <fieldset class="pure-group">
       <label for="name">Name: </label>
-      <input id="name" name="name" placeholder="What your Mom calls you" />
+      <input id="name" name="name" required="required" />
     </fieldset>
 
     <fieldset class="pure-group">
       <label for="message">Message: </label>
-      <textarea id="message" name="message" rows="10"
+      <textarea id="message" name="message" rows="10" required="required"
       ></textarea>
     </fieldset>
 
     <fieldset class="pure-group">
       <label for="email"><em>Your</em> Email Address:</label>
       <input id="email" name="email" type="email" value=""
-      required />
+      required="required" />
       <span id="email-invalid" style="display:none">
         Must be a valid email address</span>
     </fieldset>
 
     <fieldset class="pure-group">
-      <label for="subscribe">Would you like to subscribe? : </label>
-      <input id="subscribe" name="subscribe" />
+      <label for="subscribe">Would you like to subscribe? </label>
+      <input id="subscribe" name="subscribe" required="required"/>
     </fieldset>
 
-    <button class="button-success pure-button button-xlarge">
-      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    <div  style="text-align:center;"><input type="submit" value="Submit"> </div>
+
+    <!-- <button>
+      <i></i>&nbsp;Send</button> -->
 
   </form>
 
