@@ -37,27 +37,26 @@ var quotes = [
   "Stress is leaving my body.",
   "Tomorrow is full of possibility",
   "I am surrounded by love.",
-  "I can create positive change.",
-  "Challenges bring opportunities.",
-  "Challenges help me grow.",
+  "I can create positive change.",
+  "Challenges bring opportunities.",
+  "Challenges help me grow.",
   "I abandon old habits, manifesting only positive ones.",
-  "I am capable of accomplishing all my dreams.",
-  "Today has limitless possibilities.",
-  "I am at peace with the universe.",
-  "My body is healthy and functioning in a very good way.",
-  "I am safe and sound.",
-  "I acknowledge my self worth.",
-  "I am the successful architect of my life.",
-  "I release my mind of negative thinking",
-  "I am conquering stress, defeating it steadily each day.",
-  "My mind is tranquil, serene, and stress-free.",
-  "Though these times are difficult, they are only a short phase of life.",
-  "I love every cell of my body.",
-  "I now free myself from destructive fears and doubts.",
-  "I am at home in my body. All is well.",
-  "My mind is becoming calm and clear.",
-  "Each day I become more peaceful and content.",
-
+  "I am capable of accomplishing all my dreams.",
+  "Today has limitless possibilities.",
+  "I am at peace with the universe.",
+  "My body is healthy and functioning in a very good way.",
+  "I am safe and sound.",
+  "I acknowledge my self worth.",
+  "I am the successful architect of my life.",
+  "I release my mind of negative thinking",
+  "I am conquering stress, defeating it steadily each day.",
+  "My mind is tranquil, serene, and stress-free.",
+  "Though these times are difficult, they are only a short phase of life.",
+  "I love every cell of my body.",
+  "I now free myself from destructive fears and doubts.",
+  "I am at home in my body. All is well.",
+  "My mind is becoming calm and clear.",
+  "Each day I become more peaceful and content.",
 ]
 function newQuote() {
   var randomNumber = Math.floor(Math.random()*(quotes.length));
@@ -72,23 +71,12 @@ function newQuote() {
   font-size: 5vw;
   padding-bottom: 3vw;
 }
-
-#NEW {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 1.25vw;
-  border-radius: 8px;
-  border: solid;
-  border-color: white;
-  background-color: white;
-}
-
 #NEW:hover {
   background-color: #FFF8FA;
   border-radius: 8px;
   border: solid;
   border-color: #FFF8FA;
   cursor: pointer;
-
 }
   .total {
     background-color: #FFDAE6;
@@ -193,6 +181,19 @@ p.thick {
     vertical-align: top;
     line-height: 3vh;
 }
+  #NEW {
+    width: 40vw;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 4vw;
+    border-radius: 8px;
+    border: solid;
+    border-color: white;
+    background-color: white;
+    position:fixed;
+    bottom: 20vh;
+    left: 30vw;
+  }
+
 }
 @media only screen and (orientation: landscape) {
   #arrow_img{
@@ -233,6 +234,18 @@ p.thick {
     vertical-align: top;
     line-height: 3vh;
 }
+  #NEW {
+    width: 20vw;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.25vw;
+    border-radius: 8px;
+    border: solid;
+    border-color: white;
+    background-color: white;
+    position:fixed;
+    bottom: 20vh;
+    left: 40vw;
+  }
 }
 </style>
 
@@ -249,7 +262,7 @@ p.thick {
    </div>
    <div class="imagediv">
       <a href="https://caityraspberry.github.io/selfcare/home.html" class="btn-btn-info" img id="quit" role="button">Exit</a>
-      <a  href="https://caityraspberry.github.io/selfcare/tips.html" role="button"> <img id="back_arrow_img" src="backarrow.png"> </a>   
+      <a  href="https://caityraspberry.github.io/selfcare/tips.html" role="button"> <img id="back_arrow_img" src="backarrow.png"> </a>
   </div>
 </div>
 <!-- <div id="arrow">
