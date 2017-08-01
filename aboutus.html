@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +29,6 @@ body{
 p.desc {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
-    height: 300px;
     width: 300px;
     }
   a:link {
@@ -50,7 +50,8 @@ p.desc {
   .dropdown {
   position: relative;
   display: inline-block;
-
+  padding-left: 2vw;
+  padding-top: 2vh;
   font-family: 'Raleway', sans-serif;
   }
   .dropdown-content {
@@ -71,7 +72,6 @@ p.desc {
   #menu {
   width: 4vw;
   height:auto;
-  text-align: left;
   }
 a:link {
   color: #FFFCD1;
@@ -92,12 +92,14 @@ a:link {
 .pic {
     border-radius: 10px;
     width: 300px;
-    height: 300px;
     }
      .us {
       padding: 5vh 7vh 5vh 7vh;
-      margin-bottom: 2.5vh;
-      display:inline-block;
+      margin-bottom: .5vh;
+      display:inline-grid;
+      }
+      #tay {
+        text-align: center;
       }
 </style>
 </head>
@@ -118,9 +120,11 @@ a:link {
       <h1>About the Team</h1>
 
     </div>
+  </center>
+      <div>
     <div class="groupPhoto">
         <img src="yaygroup.png" style="width:100%;">
-
+<div id="tay">
     <div id="Ang" class="us">
 
     <h2 class="name">Angelica</h2>
@@ -161,6 +165,7 @@ a:link {
     </div>
   </div>
 </div>
-</center>
+</div>
+</div>
 </body>
 </html>
