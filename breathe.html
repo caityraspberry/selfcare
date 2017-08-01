@@ -19,9 +19,6 @@
     float: center;
     text-align: center;
   }
-
-
-
   .images {
     position:fixed;
     top: 35vh;
@@ -31,7 +28,6 @@
     width: 100vw;
     float: left;
   }
-
   #empty_img{
     width:50px;
     height:50px;
@@ -79,18 +75,23 @@ a:active {
     position: fixed;
     bottom: 15vh;
     left: 2vw;
-
   }
   #arrow_img{
     float: right;
     position: fixed;
     right: 7vw;
     top: 40vh;
-    right: 5vw;
     width: 7vw;
     height: auto;
   }
-
+  #back_arrow_img{
+    float:left;
+    position: fixed;
+    left: 7vw;
+    top:40vh;
+    width: 7vw;
+    height:auto;
+  }
   .instructions {
     height: 40vh;
     width: 90vw;
@@ -101,7 +102,6 @@ a:active {
     padding-bottom:10vh;
     left:5vw;
     right:5vw;
-
   }
   #instructions_text {
     top: 0;
@@ -110,7 +110,6 @@ a:active {
     font-size: 10vw;
     vertical-align: top;
   }
-
 }
 @media only screen and (orientation: landscape) {
   #gif_gif{
@@ -126,9 +125,16 @@ a:active {
     position: fixed;
     right: 7vw;
     top: 50vh;
-    right: 5vw;
     width: 3vw;
     height: auto;
+  }
+  #back_arrow_img{
+    float:left;
+    position: fixed;
+    left: 7vw;
+    top:50vh;
+    width: 3vw;
+    height:auto;
   }
   .instructions {
     height: 30vh;
@@ -141,7 +147,6 @@ a:active {
     left:10vw;
     right:10vw;
   }
-
   #instructions_text {
     top: 0;
     font-family: 'Rancho', cursive;
@@ -149,7 +154,6 @@ a:active {
     font-size: 5vw;
     vertical-align: top;
   }
-
 }
 /*     @media only screen and (min-height: 320px) {
   #gif_gif{
@@ -167,13 +171,14 @@ a:active {
   </div>
   <div >
     <div >
-        <img id="gif_gif" controls loop src="breathefull.gif">
+      <img id="gif_gif" controls loop src="breathefull.gif">
     </div>
     <div>
       <a  href="https://caityraspberry.github.io/selfcare/stretch.html" role="button"> <img id="arrow_img" src="arrow.png"> </a>
     </div>
     <div>
       <a href="https://caityraspberry.github.io/selfcare/home.html" class="btn-btn-info" img id="quit" role="button">Exit</a>
+      <a  href="https://caityraspberry.github.io/selfcare/home.html" role="button"> <img id="back_arrow_img" src="backarrow"> </a>
     </div>
   </div>
 </div>
