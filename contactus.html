@@ -15,6 +15,36 @@
    font-family: 'Raleway', sans-serif;
    font-size: 30px;
     }
+      form {
+  font-family: 'Raleway', sans-serif;
+}
+
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  padding-left: 2vw;
+  padding-top: 2vh;
+  font-family: 'Raleway', sans-serif;
+  }
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2D3C63;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+  display: block;
+  text-align: left;
+  }
+  #res:hover, #about:hover, #contact:hover, #tut:hover{
+  color: #F4BB55;
+  }
+  #menu {
+  width: 4vw;
+  height:auto;
+  }
 a:link {
   color: #FFFCD1;
   text-decoration: none;
@@ -30,14 +60,20 @@ a:link {
   a:active {
   color: #FFFCD1;
   text-decoration: none;
-  }
-      form {
-  font-family: 'Raleway', sans-serif;
-}
+    }
   </style>
 </head>
 
 <body>
+  <div class="dropdown">
+<img id='menu'src="3lines.png">
+<div class="dropdown-content">
+  <ul> <a id="tut" href="https://caityraspberry.github.io/selfcare/home.html">Home</a> </ul>
+  <ul><a id="res" href="https://caityraspberry.github.io/selfcare/aboutus.html">About Us</a> </ul>
+  <ul><a id="about" href="https://caityraspberry.github.io/selfcare/resources.html">Resources</a> </ul>
+  <ul> <a id="contact" href="https://caityraspberry.github.io/selfcare/contactus.html">Contact Us</a> </ul>
+</div>
+</div>
     <center>
      <div class="title">
          <h1>Contact us</h1>
@@ -45,9 +81,7 @@ a:link {
     </center>
 <!-- START HERE -->
    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
    <!-- Style The Contact Form How Ever You Prefer -->
-   <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
 
   <form id="gform" method="POST" class="pure-form pure-form-stacked"
   action="https://script.google.com/macros/s/AKfycbyowVvV_56L_okcSoONXfU1kJ9eNCB3Ez_fI0fqeoXi3EGvzv0/exec">
