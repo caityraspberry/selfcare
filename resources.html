@@ -8,7 +8,7 @@
      <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oregano|Rancho|Slabo+13px|Slackey|Vibur" rel="stylesheet">
 <style>
   .total {
-    background: radial-gradient(rgba(231, 129, 63, 0.05), rgba(231, 129, 63, 0.9));
+    background:rgba(231, 129, 63, 0.9);
     height: 100vh;
     position:fixed;
     top:0;
@@ -35,13 +35,7 @@
     font-size: 7vw;
     vertical-align: top;
   }
-  .images {
-    /*width:100%;
-    float:left;
-    height:60vh;
-    top: 5;
-    left:0;
-    right:0;*/
+  .images {s
     position:fixed;
     top: 35vh;
     bottom: 10vh;
@@ -56,103 +50,62 @@
     height:100%;
     text-align: center;
   }
-  #empty_img{
-    /*height:50px;*/
-    width:50px;
-    height:50px;
-    /*padding:10vh;*/
-    position: fixed;
-    left:0;
-  }
-  /*.gif {
-    padding: 5%;
-    height: 100%;
-    width: 30vw;
-    align: center;
-    float:left;*/
-  /*}*/
-  #gif_gif{
-    /*height:600px;*/
-    width:40vw;
-    height:50vh;
-    padding: 0px;
-    position:fixed;
-    bottom: 15vh;
-    left:30vw;
-  }
-  /*.arrow{
-    height: 30%;
-    width: 30vw;
-    align: center;
-    float:left;*/
-  /*}*/
-#arrow_img{
-  float:right;
-  width:5vh;
-  height: 5vw;
-  position:fixed;
-  right:10vw;
-  top: 50vh;
-}
-    a:link {
-   color: black;
+  a:link {
+   color: #FFFCD1;
    text-decoration: none;
      }
-a:visited {
-   color: black;
+   a:visited {
+   color: #FFFCD1;
    text-decoration: none;
     }
-a:hover {
-   color: black;
+   a:hover {
+   color: #FFFCD1;
    text-decoration: none;
    }
-a:active {
-   color: black;
+   a:active {
+   color: #FFFCD1;
    text-decoration: none;
    }
-#quit{
-  float:left;
-  position:fixed;
-  left:.5vw;
-  top: 1.5vh;
-}
-.btn-btn-info{
-       background-color: white;
-       font-family: 'Libre Franklin', sans-serif;
-       font-size: 3.8vh;
-       font-size: 1.9vw;
-       border-radius: 15px;
-       padding: 10px;
-     }
-.btn-btn-info:hover{
-  background-color:rgba(231, 129, 63, 0.8);
-}
+   .dropdown {
+   position: relative;
+   display: inline-block;
+   padding-left: 2vw;
+   padding-top: 2vh;
+   font-family: 'Raleway', sans-serif;
+   float: left;
+   }
+   .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #2D3C63;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   }
+   .dropdown:hover .dropdown-content {
+   display: block;
+   text-align: left;
+   }
+   #res:hover, #about:hover, #contact:hover, #tut:hover{
+   color: #F4BB55;
+   }
+   #menu {
+   width: 4vw;
+   height:auto;
+   }
 </style>
 </head>
 <body>
 <div class="total">
-  <div class="instructions">
-    <img id="instructions_text" src="breathing.gif"> 
-  </div>
-  <div class="images">
-    <div class="imagediv">
-      <!-- <a  role="button"> <img id="empty_img" src="hat.jpg"> </a> -->
+  <div class="dropdown">
+    <img id='menu'src="3lines.png">
+    <div class="dropdown-content">
+      <ul> <a id="tut" href="https://caityraspberry.github.io/selfcare/home.html">Home</a> </ul>
+      <ul><a id="res" href="https://caityraspberry.github.io/selfcare/aboutus.html">About Us</a> </ul>
+      <ul><a id="about" href="https://caityraspberry.github.io/selfcare/resources.html">Resources</a> </ul>
+      <ul> <a id="contact" href="https://caityraspberry.github.io/selfcare/contactus.html">Contact Us</a> </ul>
     </div>
-    <div class="imagediv">
-        <img id="gif_gif" src="breathefull2.gif">
-    </div>
-    <div class="imagediv">
-      <a  href="https://caityraspberry.github.io/selfcare/home.html" role="button"> <img id="arrow_img" src="hat.jpg"> </a>
-    </div>
-      <div class="imagediv">
-      <a href="https://caityraspberry.github.io/selfcare/home.html" class="btn-btn-info" img id="quit" role="button">Exit</a>
-    </div>
-      
-  </div>
 </div>
-<!-- <div id="arrow">
-  <a href="https://caityraspberry.github.io/selfcare/powerpose.html" role="button"> <img src="hat.jpg"> </a>
-</div> -->
-
+</div>
 </body>
 </html>
