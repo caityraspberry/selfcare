@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel= "shortcut icon" type= "image/x-icon" href= "lotusicon.png">
+<link rel= "shortcut icon" type= "image/x-icon" href= "lotusicon.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Affirmations</title>
-     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oregano|Rancho|Slabo+13px|Slackey|Vibur" rel="stylesheet">
+<title>Affirmations</title>
+<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oregano|Rancho|Slabo+13px|Slackey|Vibur" rel="stylesheet">
+<script>
+var quotes = [
+  "I am courageous and I stand up for myself.",
+  "Go to your happy place",
+  "I am the architect of my life; I build its foundation and choose its contents.",
+  "My body is healthy; my mind is brilliant; my soul is tranquil.",
+  "My future is an ideal projection of what I envision now.",
+  "I radiate beauty, charm, and grace.",
+  "My life is just beginning.",
+  "I am at peace with all that has happened, is happening, and will happen.",
+  "My fears of tomorrow are simply melting away.",
+  "Every day in every way, I am becoming more and more successful.",
+  "I am energetic and enthusiastic. Confidence is my second nature.",
+  "My personality exudes confidence. I am bold and outgoing.",
+  "I have integrity. I am totally reliable. I do what I say.",
+  "I sleep soundly and peacefully, and awaken feeling rested and energetic.",
+  "My work environment is calm and peaceful.",
+  "I send peace from myself into the world.",
+  "With every breath out, I release stress in my body.",
+  "I choose to be proud of myself.",
+  "I am grateful for this moment and find joy in it.",
+  "I observe my thoughts and actions without judging them.",
+  "I am surrounded by people who encourage and support healthy choices.",
+  "Calmness washes over me with every deep breath I take.",
+  "All is well in my world. I am calm, happy, and content.",
+  "I surround myself with peaceful people.",
+  "I love change and easily adjust myself to new situations.",
+  "Life is happening in this moment."
+]
+function newQuote() {
+  var randomNumber = Math.floor(Math.random()*(quotes.length));
+  document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+}
+</script>
 <style>
   .total {
     background-color: #FFDAE6;
-/*     background: radial-gradient(rgba(249, 238, 147, 0.05), rgba(249, 238, 147, 0.9)); */
+/*       background: radial-gradient(rgba(123, 137, 242, 0.05), rgba(123, 137, 242, 0.9)); */
     height: 100vh;
     position:fixed;
     top:0;
     bottom:0;
     left:0;
     right: 0;
-    float: center;
-    text-align: center;
-  }
-  .instructions {
-    height: 30%;
-    width: 100%;
-    position:fixed;
-    top: 0px;
-    /*text-align: top;*/
-    text-align: center;
     float: left;
-    padding-bottom:10vh;
-  }
-  #instructions_text {
-    top: 0;
-    font-family: 'Rancho', cursive;
-    font-size: 7vh;
-    font-size: 7vw;
-    vertical-align: top;
+    text-align: left;
   }
   .images {
-    /*width:100%;
-    float:left;
-    height:60vh;
-    top: 5;
-    left:0;
-    right:0;*/
     position:fixed;
     top: 35vh;
     bottom: 10vh;
@@ -53,48 +64,10 @@
   }
   .imagediv{
     float:left;
-    width: 25vw;
+    width: 20vw;
     height:100%;
     text-align: center;
-  }
-  #empty_img{
-    /*height:50px;*/
-    width:50px;
-    height:50px;
-    /*padding:10vh;*/
-    position: fixed;
-    left:0;
-  }
-  /*.gif {
-    padding: 5%;
-    height: 100%;
-    width: 30vw;
-    align: center;
-    float:left;*/
-  /*}*/
-  #gif_gif{
-    /*height:600px;*/
-    width:30vw;
-    height:50vh;
-    padding: 0px;
-    position:fixed;
-    bottom: 10vh;
-    left:30vw;
-  }
-  /*.arrow{
-    height: 30%;
-    width: 30vw;
-    align: center;
-    float:left;*/
-  /*}*/
-#arrow_img{
-  float:right;
-  width:5vh;
-  height: auto;
-  position:fixed;
-  right:10vw;
-  top: 50vh;
-}
+    }
     a:link {
    color: black;
    text-decoration: none;
@@ -126,24 +99,96 @@ a:active {
        padding: 10px;
      }
 .btn-btn-info:hover{
-  background-color:  rgba(249, 238, 147, 0.8);
+  background-color:rgba(123, 137, 242, 0.8);
+}
+p.thick {
+    font-weight: bold;
+}
+
+@media only screen and (orientation: portrait) {
+  #arrow_img{
+    float: right;
+    position: fixed;
+    right: 7vw;
+    top: 40vh;
+    right: 5vw;
+    width: 7vw;
+    height: auto;
+  }
+  .instructions {
+    width: 100vw;
+    position:fixed;
+    top: 10vh;
+    text-align: center;
+    float: left;
+  }
+  p {
+/*     top: 0; */
+    font-family: 'Rancho', cursive;
+    font-size: 8vh;
+    font-size: 8vw;
+    vertical-align: top;
+    line-height: 2.5vh;
+  }
+  p.thick {
+       font-family: 'Rancho', cursive;
+    font-size: 9vh;
+    font-size: 9vw;
+    vertical-align: top;
+    line-height: 3vh;
+}
+}
+@media only screen and (orientation: landscape) {
+  #arrow_img{
+    float: right;
+    position: fixed;
+    right: 7vw;
+    top: 50vh;
+    right: 5vw;
+    width: 3vw;
+    height: auto;
+  }
+  .instructions {
+    width: 100vw;
+    position:fixed;
+    top: 5vh;
+    text-align: center;
+    float: left;
+  }
+  p {
+    font-family: 'Rancho', cursive;
+    font-size: 4.5vh;
+    font-size: 4.5vw;
+    vertical-align: top;
+    line-height: 2.5vh;
+  }
+    p.thick {
+       font-family: 'Rancho', cursive;
+    font-size: 5.5vh;
+    font-size: 5.5vw;
+    vertical-align: top;
+    line-height: 3vh;
+}
 }
 </style>
+
 </head>
+
 <body>
 <div class="total">
-
-    <div class="imagediv">
-      <a  href="https://caityraspberry.github.io/selfcare/tips.html" role="button"> <img id="arrow_img" src="arrow.png"> </a>
-    </div>
-    <div class="imagediv">
+  <div class="instructions">
+        <p class="thick">Affirmations</p>
+        <div id="quoteDisplay">
+</div>
+<button onclick="newQuote()">Another One!</button>
+            <a  href="https://caityraspberry.github.io/selfcare/home.html" role="button"> <img id="arrow_img" src="arrow.png"> </a>
+   </div>
+   <div class="imagediv">
       <a href="https://caityraspberry.github.io/selfcare/home.html" class="btn-btn-info" img id="quit" role="button">Exit</a>
     </div>
-  </div>
 </div>
 <!-- <div id="arrow">
-  <a href="https://caityraspberry.github.io/selfcare/powerpose.html" role="button"> <img src="arrow.png"> </a>
+  <a href="https://caityraspberry.github.io/selfcare/powerpose.html" role="button"> <img src="hat.jpg"> </a>
 </div> -->
-
 </body>
 </html>
