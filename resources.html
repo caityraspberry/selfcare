@@ -2,19 +2,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel= "shortcut icon" type= "image/x-icon" href= "lotusicon.png">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resources</title>
-     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oregano|Rancho|Slabo+13px|Slackey|Vibur" rel="stylesheet">
+<title>Resources</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <style>
-  body {
-    background:#b0fcf4;
-    margin: 8px;
-  }
-  a:link {
+body {
+    background-color: #E7ECE6;
+    }
+.resourcescontainer {
+    overflow: hidden;
+    background-color: #508AA8;
+    font-family: 'Raleway', sans-serif;
+    padding: 2px;
+}
+.resourcescontainer a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.resourcesdropdown {
+    float: left;
+    overflow: hidden;
+}
+.resourcesdropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+.resourcescontainer a:hover, .resourcesdropdown:hover .dropbtn {
+    background-color: #8FB4C7
+}
+.show {
+    display: block;
+}
+.mainPhoto {
+  padding-left:0px;
+  padding-right:0px;
+/*   height: 70%; */
+}
+h1 {
+   font-family: 'Raleway'; sans-serif;
+   font-size: 50px;
+ }
+ a:link {
    color: #b0fcf4;
    text-decoration: none;
      }
@@ -61,25 +97,39 @@
    width: 4vw;
    height:auto;
    }
-    .title {
-   font-family: 'Raleway', sans-serif;
-   font-size: 30px;
-   height: 25%;
-    }
 </style>
 </head>
 <body>
+<div>
   <div class="dropdown">
-    <img id='menu'src="3lines.png">
-    <div class="dropdown-content">
-      <ul> <a id="tut" href="https://caityraspberry.github.io/selfcare/home.html">Home</a> </ul>
-      <ul><a id="res" href="https://caityraspberry.github.io/selfcare/aboutus.html">About Us</a> </ul>
-      <ul><a id="about" href="https://caityraspberry.github.io/selfcare/resources.html">Resources</a> </ul>
-      <ul> <a id="contact" href="https://caityraspberry.github.io/selfcare/contactus.html">Contact Us</a> </ul>
-    </div>
+      <img id='menu'src="3lines.png">
+      <div class="dropdown-content">
+        <ul> <a id="tut" href="https://caityraspberry.github.io/selfcare/home.html">Home</a> </ul>
+        <ul><a id="res" href="https://caityraspberry.github.io/selfcare/aboutus.html">About Us</a> </ul>
+        <ul><a id="about" href="https://caityraspberry.github.io/selfcare/resources.html">Resources</a> </ul>
+        <ul> <a id="contact" href="https://caityraspberry.github.io/selfcare/contactus.html">Contact Us</a> </ul>
+      </div>
+  </div>
+  <div class="resourcesdropdown">
 </div>
-    <center>
-    <a href= "https://caityraspberry.github.io/selfcare/credits.html"><font color="#000000">Link to Sources We Used</font></a>
-    </center>
+<center>
+<h1>Resources</h1>
+</center>
+    <div class="mainPhoto">
+        <img src="tranquil.jpg" style="width:100%;">
+</div>
+<div>
+<div class="resourcescontainer">
+
+  <a href="waystodestress.html">Ways to Destress</a>
+  <a href="placestogo.html">Places to Go</a>
+  <a href="websitestovisit.html">Websites to Visit</a>
+  <a href="hotlines.html">Hotlines</a>
+  <a href="credits.html">Credits</a>
+
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
