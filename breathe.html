@@ -3,6 +3,7 @@
 <head>
       <link rel= "shortcut icon" type= "image/x-icon" href= "lotusicon.png">
 <meta charset="utf-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Breathe</title>
      <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oregano|Rancho|Slabo+13px|Slackey|Vibur" rel="stylesheet">
@@ -56,18 +57,51 @@ a:active {
   left:.5vw;
   top: 1.5vh;
 }
-.btn-btn-info{
-       background-color: #C9DFD9;
-       font-family: 'Libre Franklin', sans-serif;
-       font-size: 3.8vh;
-       font-size: 1.9vw;
-       border-radius: 8px;
-       padding: 10px;
-     }
+  .w3-button-w3-display-topright{
+     font-size: 200%;
+   }
+   .w3-button-w3-display-topright:hover{
+   cursor: pointer;
+ }
 .btn-btn-info:hover{
-  background-color: #81A29A;
+  cursor:pointer;
 }
+ #modal_image:hover{
+  cursor:pointer;
+  width:15vw;
+ }
 @media only screen and (orientation: portrait) {
+  #modal_image{
+    width:10vw;
+    position:fixed;
+    right: 5vw;
+    top:5vh;
+  }
+  .w3-modal-content {
+    border-radius: 20px;
+    background-color: #bc85a1;
+    width: 80vw;
+    position: fixed;
+    left: 10vw;
+  }
+  /*.w3-container {
+    width: 80vw;
+    position: fixed;
+    left: 10vw;
+    border-radius: 20px;
+    background-color: #bc85a1;
+  }*/
+  .btn-btn-info{
+         background-color: #C9DFD9;
+         font-family: 'Libre Franklin', sans-serif;
+         font-size: 3.8vh;
+         font-size: 1.9vw;
+         border-radius: 8px;
+         padding: 10px;
+       }
+  .btn-btn-info:hover{
+    background-color: #81A29A;
+  }
   #gif_gif{
     width: 95vw;
     height: auto;
@@ -113,6 +147,37 @@ a:active {
   }
 }
 @media only screen and (orientation: landscape) {
+  #modal_image{
+    width:10vw;
+    position:fixed;
+    right: 5vw;
+    top:5vh;
+  }
+  .w3-modal-content {
+    border-radius: 20px;
+    background-color: #bc85a1;
+    width: 80vw;
+    position: fixed;
+    left: 10vw;
+  }
+  /*.w3-container {
+    width: 80vw;
+    position: fixed;
+    left: 10vw;
+    border-radius: 20px;
+    background-color: #bc85a1;
+  }*/
+  .btn-btn-info{
+         background-color: #C9DFD9;
+         font-family: 'Libre Franklin', sans-serif;
+         font-size: 3.8vh;
+         font-size: 1.9vw;
+         border-radius: 8px;
+         padding: 10px;
+       }
+  .btn-btn-info:hover{
+    background-color: #81A29A;
+  }
   #gif_gif{
     width: 65vw;
     height: auto;
@@ -180,7 +245,22 @@ a:active {
     </div>
     <div>
       <a href="https://caityraspberry.github.io/selfcare/home.html" class="btn-btn-info" img id="quit" role="button">Exit</a>
-<!--       <a  href="https://caityraspberry.github.io/selfcare/home.html" role="button"> <img id="back_arrow_img" src="backarrow.png"> </a> -->
+      <a  href="https://caityraspberry.github.io/selfcare/home.html" role="button"> <img id="back_arrow_img" src="backarrow.png"> </a>
+    </div>
+  </div>
+  <div class="w3-container">
+      <!-- <center> -->
+        <img id="modal_image" src="mark.png" onclick="document.getElementById('id01').style.display='block'" role="button" >
+      <!-- </center> -->
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button-w3-display-topright">&times;</span>
+          <p id="HEADER"> <font color="#FFFCD1">EXERCISE NAME</font></p>
+          <p id="WORDS"> <font color="#FFFCD1">This is where we will explain the exercises. This is where we will explain the exercises. This is where we will explain the exercises. This is where we will explain the exercises. This is where we will explain the exercises. This is where we will explain the exercises. </font></p>
+          <!-- <a href="https://caityraspberry.github.io/selfcare/breathe.html"><button id="start"> <font color="#FFFCD1">Go back</font></button></a> -->
+        </div>
+      </div>
     </div>
   </div>
 </div>
