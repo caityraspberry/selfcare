@@ -3,6 +3,7 @@
 <head>
     <link rel= "shortcut icon" type= "image/x-icon" href= "lotusicon.png">
 <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tips</title>
      <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Oregano|Rancho|Slabo+13px|Slackey|Vibur" rel="stylesheet">
@@ -64,6 +65,21 @@ a:active {
        border-radius: 8px;
        padding: 10px;
      }
+    .w3-button-w3-display-topright{
+     font-size: 200%;
+   }
+   .w3-button-w3-display-topright:hover{
+   cursor: pointer;
+ }
+.btn-btn-info:hover{
+  cursor:pointer;
+}
+ #modal_image:hover{
+  cursor:pointer;
+ }
+ leave:hover{
+       cursor:pointer;
+
 .btn-btn-info:hover{
   background-color:#E7FAFF;
 }
@@ -72,6 +88,40 @@ p.thick {
 }
 
 @media only screen and (orientation: portrait) {
+  #modal_image{
+    width:7vw;
+    position:fixed;
+    right: 2.5vw;
+    top:2.5vh;
+  }
+  .w3-modal-content {
+    border-radius: 20px;
+    background-color: #bc85a1;
+    width: 80vw;
+    position: fixed;
+    left: 10vw;
+    text-align:center;
+  }
+ #leave{
+    width: 80%;
+    margin: 5px;
+    background-color: #2D3C63;
+    border: solid;
+    border-color: #2D3C63;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 4vw;
+    border-radius: 15px;
+    padding: 10px;
+      }
+ .modal_block {
+    width: 80vw;
+    position: fixed;
+    left: 10vw;
+    border-radius: 20px;
+    background-color: #bc85a1;
+    text-align: center;
+  }  
+  
   #arrow_img{
     float: right;
     position: fixed;
@@ -90,9 +140,9 @@ p.thick {
     height:auto;
   }
   .instructions {
-    width: 100vw;
+    width: 70vw;
     position:fixed;
-    top: 10vh;
+    left: 15vw;
     text-align: center;
     float: left;
   }
@@ -111,8 +161,53 @@ p.thick {
     vertical-align: top;
     line-height: 3vh;
 }
+    #WORDS {
+    font-size: 5vw;
+    font-family: 'Libre Franklin', sans-serif;
+}
+  #HEADER {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Libre Franklin', sans-serif;
+   }
 }
 @media only screen and (orientation: landscape) {
+    
+  #modal_image{
+    width:3vw;
+    position:fixed;
+    right: 2.5vw;
+    top:2.5vh;
+  }
+  .w3-modal-content {
+    border-radius: 20px;
+    background-color: #bc85a1;
+    width: 80vw;
+    position: fixed;
+    left: 10vw;
+    text-align:center;
+  }
+   #leave{
+        width: 80%;
+        margin: 5px;
+        background-color: #2D3C63;
+        border: solid;
+        border-color: #2D3C63;
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 2vw;
+        border-radius: 15px;
+        padding: 10px;
+      }      
+  .modal_block {
+    width: 80vw;
+    position: fixed;
+    left: 10vw;
+    border-radius: 20px;
+    background-color: #bc85a1;
+    text-align: center;
+  }
   #arrow_img{
     float: right;
     position: fixed;
@@ -131,9 +226,9 @@ p.thick {
     height:auto;
   }
   .instructions {
-    width: 100vw;
+    width: 70vw;
     position:fixed;
-    top: 5vh;
+    left: 15vw;
     text-align: center;
     float: left;
   }
@@ -151,6 +246,17 @@ p.thick {
     vertical-align: top;
     line-height: 3vh;
 }
+    #WORDS {
+    font-size: 1.5vw;
+    font-family: 'Libre Franklin', sans-serif;
+}
+  #HEADER {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Libre Franklin', sans-serif;
+   }
 }
 </style>
 
@@ -173,6 +279,21 @@ p.thick {
       <a  href="https://caityraspberry.github.io/selfcare/breathe2.html" role="button"> <img id="back_arrow_img" src="backarrow.png"> </a>
     </div>
 </div>
+    <div class="w3-container">
+      <!-- <center> -->
+        <img id="modal_image" src="mark.png" onclick="document.getElementById('id01').style.display='block'" role="button" >
+      <!-- </center> -->
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="modal_block">
+<!--           <span onclick="document.getElementById('id01').style.display='none'" class="w3-button-w3-display-topright">&times;</span> -->
+          <p id="HEADER"> <font color="#FFFCD1">EXERCISE NAME</font></p>
+          <p id="WORDS"> <font color="#FFFCD1">This is where we will explain the exercises. This is where we will explain the exercises. This is where we will explain the exercises. This is where we will explain the exercises. This is where we will explain the exercises. This is where we will explain the exercises. </font></p>
+          <a href="https://caityraspberry.github.io/selfcare/breathe.html"><button id="leave"> <font color="#FFFCD1">Back to the exercise</font></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
 <!-- <div id="arrow">
   <a href="https://caityraspberry.github.io/selfcare/powerpose.html" role="button"> <img src="hat.jpg"> </a>
 </div> -->
