@@ -1,9 +1,27 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
 <title>Resources</title>
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script>
+function text1appear() {
+    document.getElementById("text1").innerHTML = "<li>Take showers</li><li>Play music</li><li>Sing</li><li>Make art</li><li>Do yoga</li><li>Run</li><li>Go on a walk</li><li>Sleep</li><li>Take naps</li><li>Complement yourself</li><li>Meditate</li><li>Find an affirmation that you connect with and repeat it to yourself</li><li>Be in nature</li><li>Play with dogs or cats</li><li>Drink water</li><li>Drink a coffee or tea</li><li>Exercise</li><li>Dance to your favorite music</li><li>Go to the beach</li><li>Wrap gifts</li>";
+}
+function text2appear() {
+    document.getElementById("text1").innerHTML = "<li>Yoga studios</li><li>Art classes</li><li>Hikes</li><li>Parks</li><li>Gyms (ymca, jcc, equinox)</li><li>Book stores</li><li>Book stores</li><li>Spas</li><li>Shopping Malls</li><li>Temples and Churches</li><li>Concerts</li><li>Concerts</li>";
+}
+function text3appear() {
+    document.getElementById("text1").innerHTML = "THREEE";
+}
+function text4appear() {
+    document.getElementById("text1").innerHTML = "FOURRR";
+}
+function text5appear() {
+    document.getElementById("text1").innerHTML = "FIVEE";
+}
+</script>
 <style>
 body {
     background-color: #E7ECE6;
@@ -36,7 +54,7 @@ body {
     background-color: inherit;
 }
 .resourcescontainer a:hover, .resourcesdropdown:hover .dropbtn {
-    background-color: #8FB4C7
+    background-color: #8FB4C7;
 }
 .show {
     display: block;
@@ -51,7 +69,7 @@ h1 {
    font-size: 50px;
  }
  a:link {
-   color: #b0fcf4;
+   color: #FFFCD1;
    text-decoration: none;
      }
    a:visited {
@@ -97,6 +115,24 @@ h1 {
    width: 4vw;
    height:auto;
    }
+   button {
+     background-color: #508AA8;
+     border: none;
+     color: #FFFCD1;
+     font-size: 30px;
+     padding-right: 30px;
+     font-family: 'Raleway', sans-serif;
+     padding-top: 10px;
+     padding-bottom: 10px;
+   }
+   button:hover {
+     background-color: #8FB4C7;
+   }
+   #text1, #text2, #text3, #text4, #text5 {
+     padding-top: 30px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+   }
 </style>
 </head>
 <body>
@@ -121,15 +157,24 @@ h1 {
 <div>
 <div class="resourcescontainer">
 
-  <a href="waystodestress.html">Ways to Destress</a>
-  <a href="placestogo.html">Places to Go</a>
-  <a href="websitestovisit.html">Websites to Visit</a>
-  <a href="hotlines.html">Hotlines</a>
-  <a href="credits.html">Credits</a>
+  <button onclick="text1appear()">Ways to Destress</button>
+  <button onclick="text2appear()">Places to Go</button>
+  <button onclick="text3appear()">Websites to Visit</button>
+  <button onclick="text4appear()">Hotlines</button>
+  <button onclick="text5appear()">Credits</button>
 
     </div>
   </div>
 </div>
-
+<div id="text1">
+</div>
+<div id="text2">
+</div>
+<div id="text3">
+</div>
+<div id="text4">
+</div>
+<div id="text5">
+</div>
 </body>
 </html>
