@@ -56,34 +56,18 @@ a:active {
   left:.5vw;
   top: 1.5vh;
 }
-  .w3-button-w3-display-topright{
-     font-size: 200%;
-   }
-   .w3-button-w3-display-topright:hover{
-   cursor: pointer;
- }
+.btn-btn-info{
+       background-color: #C9DFD9;
+       font-family: 'Libre Franklin', sans-serif;
+       font-size: 3.8vh;
+       font-size: 1.9vw;
+       border-radius: 8px;
+       padding: 10px;
+     }
+.btn-btn-info:hover{
+  background-color: #81A29A;
+}
 @media only screen and (orientation: portrait) {
-  .w3-modal-content {
-  border-radius: 20px;
-  background-color: #bc85a1;
-  }
-  .w3-container {
-    width: 80vw;
-    position: fixed;
-    left: 10vw;
-    border-radius: 20px;
-    background-color: #bc85a1;
-  }
-  .modal_image{
-    width:10vw;
-    position: fixed;
-    top: 7vh;
-    right: 5vw;
-  }
-  .modal_image:hover{
-    width: 15vw;
-    cursor: pointer;
-  }
   #gif_gif{
     width: 95vw;
     height: auto;
@@ -129,27 +113,6 @@ a:active {
   }
 }
 @media only screen and (orientation: landscape) {
-  .w3-modal-content {
-  border-radius: 20px;
-  background-color: #bc85a1;
-  }
-  .w3-container {
-    width: 80vw;
-    position: fixed;
-    left: 10vw;
-    border-radius: 20px;
-    background-color: #bc85a1;
-  }
-  .modal_image{
-    width:10vw;
-    position: fixed;
-    top: 7vh;
-    right: 5vw;
-  }
-  .modal_image:hover{
-    width: 15vw;
-    cursor: pointer;
-  }
   #gif_gif{
     width: 65vw;
     height: auto;
@@ -217,24 +180,9 @@ a:active {
     </div>
     <div>
       <a href="https://caityraspberry.github.io/selfcare/home.html" class="btn-btn-info" img id="quit" role="button">Exit</a>
-      <a  href="https://caityraspberry.github.io/selfcare/home.html" role="button"> <img id="back_arrow_img" src="backarrow.png"> </a>
+<!--       <a  href="https://caityraspberry.github.io/selfcare/home.html" role="button"> <img id="back_arrow_img" src="backarrow.png"> </a> -->
     </div>
   </div>
-  <div class="w3-container">
-      <center>
-          <button onclick="document.getElementById('id01').style.display='block'" role="button" > <img id="modal_image" src="mark.png"></button>
-      </center>
-  <div id="id01" class="w3-modal">
-    <div class="w3-modal-content">
-      <div class="w3-container">
-        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button-w3-display-topright">&times;</span>
-        <p id="HEADER"> <font color="#FFFCD1">EXERCISE NAME</font></p>
-        <p id="WORDS"> <font color="#FFFCD1">This is where we will explain the exercises. This is where we will explain the exercises. This is where we will explain the exercises. This is where we will explain the exercises. This is where we will explain the exercises. This is where we will explain the exercises. </font></p>
-        <!-- <a href="https://caityraspberry.github.io/selfcare/breathe.html"><button id="start"> <font color="#FFFCD1">Go back</font></button></a> -->
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 </body>
 </html>
