@@ -1,9 +1,8 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
 <title>Resources</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <script>
 function text1appear() {
@@ -13,7 +12,7 @@ function text2appear() {
     document.getElementById("text1").innerHTML = "<li>Yoga studios</li><li>Art classes</li><li>Hikes</li><li>Parks</li><li>Gyms (ymca, jcc, equinox)</li><li>Book stores</li><li>Book stores</li><li>Spas</li><li>Shopping Malls</li><li>Temples and Churches</li><li>Concerts</li><li>Concerts</li>";
 }
 function text3appear() {
-    document.getElementById("text1").innerHTML = "<center><h2>Please make sure to call 911 when you are in need of immediate medical assistance when you are experiencing a medical emergency, feeling suicidal, or in danger.</h2><center><li>National Suicide Prevention Lifeline: 1-800-273-TALK (8255) – open 24/7</li><li>Boys Town National Hotline: 1-800-448-3000 – open 24/7</li><li>Teen Line: 1-310-855-HOPE (4673) or 1-800-TLC-TEEN (852-8336)</li><li>Text “TEEN” to 839863 – open 6 p.m. to 10 p.m. PST</li><li>Crisis Call Center: 800-273-8255 – open 24/7</li><li>Text “ANSWER” to 839863 – open 24/7</li><li>Thursday’s Child National Youth Advocacy Hotline: 800-USA-KIDS (5437) – open 24/7</li><li>Crisis Textline: text “CONNECT” to 741741 – open 24/7</li><li>Your Life Your Voice:1-800-448-3000 – open 24/7</li><li>Text “startText Voice” to 20121</li>";
+    document.getElementById("text1").innerHTML = "<center><h2>Please make sure to call 911 when you are in need of immediate medical assistance when you are experiencing a medical emergency, feeling suicidal, or in danger.</h2><center><ul><li>National Suicide Prevention Lifeline: 1-800-273-TALK (8255) – open 24/7</li><li>Boys Town National Hotline: 1-800-448-3000 – open 24/7</li><li>Teen Line: 1-310-855-HOPE (4673) or 1-800-TLC-TEEN (852-8336)</li><ul><li>Or text “TEEN” to 839863 – open 6 p.m. to 10 p.m. PST</li></ul><li>Crisis Call Center: 800-273-8255 – open 24/7</li><ul><li>Or text “ANSWER” to 839863 – open 24/7</li></ul><li>Thursday’s Child National Youth Advocacy Hotline: 800-USA-KIDS (5437) – open 24/7</li><li>Crisis Textline: text “CONNECT” to 741741 – open 24/7</li><li>Your Life Your Voice:1-800-448-3000 – open 24/7</li><ul><li>Or text “startText Voice” to 20121</li></ul><ul><li>Chat and email based services are also available</li></ul></ul>";
 }
 function text4appear() {
     document.getElementById("text1").innerHTML = "FOURRR";
@@ -26,7 +25,9 @@ function text5appear() {
 body {
     background-color: #E7ECE6;
     }
-
+ul {
+  font-family: 'Arial', sans-serif;
+}
 .resourcescontainer {
     overflow: hidden;
     background-color: #508AA8;
@@ -139,7 +140,7 @@ h1 {
    }
    li {
      text-align: left;
-     line-height: 150%;
+     line-height: 170%;
    }
 </style>
 </head>
